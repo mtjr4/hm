@@ -1,0 +1,229 @@
+body{  
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #711a1a;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.topo{  
+    display: flex;
+    justify-content: center;
+    background-color: #711a1a;
+}
+
+.conteudo-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: inter, sans-serif;
+    font-weight: bold;
+}
+
+#cont{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cont a{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#hm{
+    display: flex;
+    gap: 30px;
+}
+
+#hm a{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.linha1{
+    margin-top: 50px;
+}
+
+.linha1, .linha2{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.hq{
+    width: 22%;
+    margin: 5px;
+    border: 2px solid #000000;
+}
+
+.linha2 {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+    margin-top: 15px;
+    margin-left: 0.5%;
+}
+
+.hq {
+    width: 22%;
+    margin: 5px;
+    border: 2px solid #000000;
+}
+
+.continua {
+    font-size: 50px;
+    text-align: left;
+    padding-top: 180px;
+    padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .linha1, .linha2 {
+        width: 100%; /* Garante que cada linha ocupe toda a largura da tela */
+        justify-content: space-between; /* Ajusta os quadrinhos para ficarem lado a lado */
+    }
+
+    .hq {
+        width: 48%; /* Garante que cada linha tenha 2 quadrinhos */
+        margin: 5px 0;
+    }
+
+    .continua {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    /* Ajusta o topo para caber na tela */
+    .topo {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .conteudo-topo {
+        padding: 10px;
+    }
+
+    #cont {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #hm {
+        gap: 10px;
+    }
+
+    #hm a {
+        font-size: 18px;
+    }
+
+@media (max-width: 768px) {
+    .linha1, .linha2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .hq {
+        width: 48%; /* Cada quadrinho ocupará 48% da largura, deixando espaço para 2 por linha */
+        margin: 5px;
+    }
+
+    .continua {
+        font-size: 30px;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+
+    /* Ajusta o topo para caber na tela */
+    .topo {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .conteudo-topo {
+        padding: 10px;
+    }
+
+    #cont {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    #hm {
+        gap: 10px;
+    }
+
+    #hm a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linha1, .linha2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .hq {
+        width: 42%;
+        margin: 10px;
+    }
+
+    .continua {
+        font-size: 25px;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .topo {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .conteudo-topo {
+        padding: 8px;
+    }
+
+    #cont {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    #hm {
+        gap: 8px;
+    }
+
+    #hm a {
+        font-size: 16px;
+    }
+}
